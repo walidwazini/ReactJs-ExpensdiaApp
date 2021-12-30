@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './ExpenseForm.css'
 
 const ExpenseForm = (props) => {
-    const anyDate = new Date(2021, 7, 15)
+    // const anyDate = new Date(2021, 7, 15)
     const [enteredTitle, setEnteredTitle] = useState('')
     const [enteredAmount, setEnteredAmount] = useState('')
     const [enteredDate, setEnteredDate] = useState('')
@@ -65,7 +65,7 @@ const ExpenseForm = (props) => {
                         min='2019-01-01'
                         max='2022-12-31'
                         value={enteredDate}
-                        defaultValue={anyDate}
+                        // defaultValue={anyDate}
                         onChange={dateChangeHandler}
                     />
                 </div>

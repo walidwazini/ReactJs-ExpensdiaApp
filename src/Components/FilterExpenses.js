@@ -16,6 +16,10 @@ const ExpensesFilter = (props) => {
           <option value='2021'>2021</option>
           <option value='2020'>2020</option>
           <option value='2019'>2019</option>
+          {/* <option value='jan'>January</option>
+          <option value='feb'>February</option>
+          <option value='mar'>March</option>
+          <option value='apr'>April</option> */}
         </select>
       </div>
     </div>
