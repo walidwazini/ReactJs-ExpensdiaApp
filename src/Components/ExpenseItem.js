@@ -1,6 +1,6 @@
-import React, { 
+import React, {
     // useState,
- } from 'react'
+} from 'react'
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 import './ExpenseItem.css'
@@ -21,16 +21,18 @@ const ExpenseItem = (props) => {
     //     console.log(title)
     // }
     return (
-        <div className='expense-item' >
-            <ExpenseDate dateItem={props.dateFor} />
-            <div className='expense-item__description'>
-                {/* <h2> {title} </h2> */}
-                <h2>{props.titleFor}</h2>
-                <div className='expense-item__price' >RM {props.amountFor}</div>
+        <li>
+            <div className='expense-item' >
+                <ExpenseDate dateItem={props.dateFor} />
+                <div className='expense-item__description'>
+                    {/* <h2> {title} </h2> */}
+                    <h2>{props.titleFor}</h2>
+                    <div className='expense-item__price' >RM {props.amountFor}</div>
+                </div>
+                <button className='btn btn-primary' onClick={() => console.log(props.idFor)} >Check</button>
+                {/* <button className='btn btn-dark btn-sm' onClick={clickHandler} >Change Title</button> */}
             </div>
-            <button className='btn btn-primary' onClick={() => console.log(props.idFor)} >Check</button>
-            {/* <button className='btn btn-dark btn-sm' onClick={clickHandler} >Change Title</button> */}
-        </div>
+        </li>
     )
 }
 
